@@ -1,1 +1,1 @@
-exports_files(glob([".*json"]));
+exports_files(["reviews_electronics.json"])
