@@ -1,11 +1,11 @@
 java_library(
     name = "frontend",
-    srcs = glob([".*java"]),
+    srcs = glob(["*.java"]),
 )
 
 java_binary(
-    main_class = "com.websensus.frontend.MainServer",
     name = "server",
     srcs = ["MainServer.java"],
+    main_class = "com.websensus.frontend.MainServer",
     deps = [":frontend"],
 )
